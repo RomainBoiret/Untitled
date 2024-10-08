@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* :root {
+    --background: #fff;
+    --border: #000;
+    --text-color: #000;
+} */
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+}
+
+#myCanvas {
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.slider-container label {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.slider-container input {
+    width: 70%;
+}
+
+#draw-button {
+    background: #f6f6f6;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Dark mode */
+
+.dark-mode {
+    background: #000;
+}
+
+.dark-mode canvas {
+    background: #000;
+    border: 2px solid #fff;
+}
+
+.dark-mode label {
+    color: #fff;
+}
+
+.dark-mode button {
+    background: #000;
+    color: #fff;
+}

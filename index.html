@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled</title>
+    <title>Interactive Fractal</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <canvas 
-        id="myCanvas"
-        style="
-            width: 500px;
-            height: 500px;
-            border: 1px solid #000;
-        "
-    ></canvas>
+    <canvas id="myCanvas"></canvas>
+
+    <div class="controls">
+        <div class="slider-container">
+            <label for="iterations">Iterations:</label>
+            <input type="range" id="iterations" min="1" max="6" step="1" value="5">
+        </div>
+        <div class="slider-container">
+            <label for="size">Size:</label>
+            <input type="range" id="size" min="200" max="1000" step="50" value="700">
+        </div>
+        <div class="slider-container">
+            <label for="speed">Speed:</label>
+            <input type="range" id="speed" min="1" max="10" step="1" value="5">
+        </div>
+    </div>
+
+    <button id="draw-button">Dessiner la figure</button>
+
+    <button id="dark-mode-toggle">Activer Dark Mode</button>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/theme.js"></script>
 </body>
-<script src="./scripts/script.js"></script>
 </html>
